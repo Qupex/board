@@ -1,0 +1,84 @@
+.DayCard {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+    // line-height: 150px;
+    color: white;
+    // font-weight: bold;
+    // font-size: 2em;
+    // text-align: center;
+
+    transition: 0.2s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #fa2f0a;
+		color: white;
+        transform: scale(1.05)
+	}
+
+    .TopArea {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+        .InOffice {
+            font-size: 2em;
+            text-align: right;
+        }
+    }
+
+    .BottomArea {
+
+        
+        
+
+        .WFHList {
+            
+            position: absolute;
+            // padding: 20px 50px 0px 30px;
+            padding-left: 0.5rem;
+            
+            height: 100px;
+            font-size: 15px;
+            width: 200px;
+            
+            overflow-y: auto;
+            scroll-behavior: auto;
+
+            gap: 6px;
+    
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+
+        .WFHItem {
+            display: flex;
+
+            .WFHItemName {
+                padding-left: 6px;
+                text-align: center;
+            }
+        }
+
+
+        // Remove default scrollbar
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+
+
+
+}

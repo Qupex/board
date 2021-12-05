@@ -1,0 +1,24 @@
+.Board {
+    display: grid;
+
+    .WeekContainer {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .DayContainer {
+        display: flex;
+        // flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .WeekHeader {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .WContainer {
+        display: grid;
+
+    }
+}
